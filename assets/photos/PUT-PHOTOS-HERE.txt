@@ -1,0 +1,40 @@
+Save your photos in this folder using exactly these names.
+-1.jpg is the main photo (home, heritage list, site page). -2 and -3 are extra gallery photos.
+Any missing file falls back to the illustration. Free-licence photos: commons.wikimedia.org (search the site name; check the licence and credit the author).
+
+hawa-mahal-1.jpg
+hawa-mahal-2.jpg
+hawa-mahal-3.jpg
+amber-fort-1.jpg
+amber-fort-2.jpg
+amber-fort-3.jpg
+city-palace-1.jpg
+city-palace-2.jpg
+city-palace-3.jpg
+jantar-mantar-1.jpg
+jantar-mantar-2.jpg
+jantar-mantar-3.jpg
+jal-mahal-1.jpg
+jal-mahal-2.jpg
+jal-mahal-3.jpg
+nahargarh-fort-1.jpg
+nahargarh-fort-2.jpg
+nahargarh-fort-3.jpg
+jaigarh-fort-1.jpg
+jaigarh-fort-2.jpg
+jaigarh-fort-3.jpg
+albert-hall-museum-1.jpg
+albert-hall-museum-2.jpg
+albert-hall-museum-3.jpg
+gaitore-ki-chhatriyan-1.jpg
+gaitore-ki-chhatriyan-2.jpg
+gaitore-ki-chhatriyan-3.jpg
+govind-dev-ji-temple-1.jpg
+govind-dev-ji-temple-2.jpg
+govind-dev-ji-temple-3.jpg
+isarlat-1.jpg
+isarlat-2.jpg
+isarlat-3.jpg
+sisodia-rani-garden-1.jpg
+sisodia-rani-garden-2.jpg
+sisodia-rani-garden-3.jpg

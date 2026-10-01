@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hotel Booking | Jaipur Tourism</title><meta name="description" content="Explore the heritage sites of Jaipur, the Pink City of Rajasthan.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Rozha+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header class="site-header"><div class="wrap bar"><a class="brand" href="index.html"><img src="assets/logo.svg" alt="">Jaipur</a>
+<button class="menu-btn" aria-expanded="false" aria-label="Toggle menu">Menu</button><nav aria-label="Main"><ul class="tabs"><li><a href="index.html">Home</a></li><li><a href="heritage.html">Heritage</a></li><li><a href="booking.html" aria-current="page">Hotel Booking</a></li><li><a href="gallery.html">Gallery</a></li></ul></nav></div></header>
+<main><div class="wrap"><div class="page-head"><h1>Hotel booking</h1><p>Fill in the form to reserve a stay. The summary on the right updates as you choose. Fields marked * are required.</p></div>
+<div class="book"><form id="booking">
+<fieldset><legend>Guest details</legend><div class="row">
+<div class="f full"><label for="name">Full name <span class="req">*</span></label><input type="text" id="name" name="name" required minlength="3" placeholder="As on your ID" autocomplete="name"></div>
+<div class="f"><label for="email">Email <span class="req">*</span></label><input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email"></div>
+<div class="f"><label for="phone">Phone <span class="req">*</span></label><input type="tel" id="phone" name="phone" required pattern="[0-9+ ()\-]{8,16}" placeholder="+91 98765 43210" autocomplete="tel"></div>
+<div class="f"><label for="dob">Date of birth</label><input type="date" id="dob" name="dob" max="2008-12-31"></div>
+<div class="f"><span class="lbl">Gender</span><div class="choices" role="radiogroup"><label class="choice"><input type="radio" name="gender" value="Female"><span>Female</span></label><label class="choice"><input type="radio" name="gender" value="Male"><span>Male</span></label><label class="choice"><input type="radio" name="gender" value="Other"><span>Other</span></label></div></div>
+<div class="f"><label for="nation">Nationality <span class="req">*</span></label><select id="nation" name="nation" required><option value="">Select country</option><option>India</option><option>United States</option><option>United Kingdom</option><option>Canada</option><option>Australia</option><option>Germany</option><option>France</option><option>Japan</option><option>Singapore</option><option>United Arab Emirates</option><option>Other</option></select></div>
+<div class="f"><label for="idtype">ID type <span class="req">*</span></label><select id="idtype" name="idtype" required><option value="">Select ID</option><option>Passport</option><option>Aadhaar card</option><option>Driving licence</option><option>Voter ID</option></select></div>
+<div class="f full"><label for="idno">ID number <span class="req">*</span></label><input type="text" id="idno" name="idno" required minlength="5" placeholder="Number on the ID"></div></div></fieldset>
+<fieldset><legend>Your stay</legend><div class="row">
+<div class="f full"><label for="hotel">Hotel type <span class="req">*</span></label><select id="hotel" name="hotel" required><option value="" data-price="0">Select a stay</option><option value="Royal palace stay (heritage luxury)" data-price="18000">Royal palace stay (heritage luxury) - from ₹18,000/night</option><option value="Restored haveli (heritage)" data-price="6500">Restored haveli (heritage) - from ₹6,500/night</option><option value="Boutique hotel, old city" data-price="3800">Boutique hotel, old city - from ₹3,800/night</option><option value="Comfort hotel, city centre" data-price="2600">Comfort hotel, city centre - from ₹2,600/night</option><option value="Budget guesthouse" data-price="1400">Budget guesthouse - from ₹1,400/night</option></select></div>
+<div class="f"><label for="checkin">Check-in <span class="req">*</span></label><input type="date" id="checkin" name="checkin" required></div>
+<div class="f"><label for="checkout">Check-out <span class="req">*</span></label><input type="date" id="checkout" name="checkout" required></div>
+<div class="f full"><p class="err" id="date-err" role="alert"></p></div></div>
+<div class="row three"><div class="f"><label for="rooms">Rooms</label><input type="number" id="rooms" name="rooms" min="1" max="6" value="1"></div>
+<div class="f"><label for="adults">Adults</label><input type="number" id="adults" name="adults" min="1" max="12" value="2"></div>
+<div class="f"><label for="children">Children</label><input type="number" id="children" name="children" min="0" max="8" value="0"></div></div>
+<div class="f" style="margin-top:.8rem"><span class="lbl">Room type <span class="req">*</span></span><div class="rooms">
+<label class="room"><input type="radio" name="room" value="Standard" data-m="1" checked><div><b>Standard</b><small>Comfortable and simple</small></div></label>
+<label class="room"><input type="radio" name="room" value="Deluxe" data-m="1.3"><div><b>Deluxe</b><small>Larger, with a view (x1.3)</small></div></label>
+<label class="room"><input type="radio" name="room" value="Suite" data-m="1.8"><div><b>Suite</b><small>Separate living area (x1.8)</small></div></label></div></div>
+<div class="row" style="margin-top:.8rem"><div class="f"><label for="bed">Bed preference</label><select id="bed" name="bed"><option>Double bed</option><option>Twin beds</option><option>King bed</option></select></div>
+<div class="f"><label for="arrive">Expected arrival time</label><input type="time" id="arrive" name="arrive" value="14:00"></div></div>
+<div class="f"><span class="lbl">Meal plan</span><div class="choices"><label class="choice"><input type="radio" name="meal" value="Room only" data-p="0" checked><span>Room only</span></label><label class="choice"><input type="radio" name="meal" value="Breakfast" data-p="400"><span>Breakfast</span></label><label class="choice"><input type="radio" name="meal" value="Half board" data-p="1000"><span>Half board</span></label><label class="choice"><input type="radio" name="meal" value="Full board" data-p="1600"><span>Full board</span></label></div></div></fieldset>
+<fieldset><legend>Extras</legend><div class="choices">
+<label class="choice"><input type="checkbox" name="extras" value="Airport pickup" data-p="900"><span>Airport pickup (₹900)</span></label>
+<label class="choice"><input type="checkbox" name="extras" value="Guided heritage tour" data-p="2500"><span>Guided heritage tour (₹2,500)</span></label>
+<label class="choice"><input type="checkbox" name="extras" value="Cultural evening" data-p="1500"><span>Folk music evening (₹1,500)</span></label>
+<label class="choice"><input type="checkbox" name="extras" value="Late check-out" data-p="800"><span>Late check-out (₹800)</span></label></div>
+<div class="f" style="margin-top:1.2rem"><label for="notes">Special requests</label><textarea id="notes" name="notes" rows="4" placeholder="Dietary needs, accessibility, celebrations..."></textarea></div>
+<label class="check" style="margin-top:.8rem"><input type="checkbox" name="terms" required><span>I confirm the details are correct and agree to the booking terms. <span class="req">*</span></span></label></fieldset>
+<div class="cta" style="margin-top:0"><button type="submit" class="btn btn-gold">Confirm booking</button><button type="reset" class="btn btn-line">Clear form</button></div></form>
+<aside class="summary" aria-live="polite"><h3>Your estimate</h3><dl><dt>Stay</dt><dd id="s-hotel">Not chosen</dd><dt>Nights</dt><dd id="s-nights">0</dd><dt>Rooms</dt><dd id="s-stay">₹0</dd><dt>Meals</dt><dd id="s-meals">₹0</dd><dt>Extras</dt><dd id="s-extras">₹0</dd></dl><div class="total" style="display:flex;justify-content:space-between"><span>Total</span><span id="s-total">₹0</span></div><p style="color:var(--muted);font-size:.9rem;margin:.8rem 0 0">Estimate only. Taxes are not included.</p></aside></div></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="m-h"><div class="box"><h2 id="m-h">Booking received</h2><p>Thank you, <b id="m-name"></b>. Your reference is <b id="m-ref"></b>.</p><p id="m-detail"></p><p>Estimated total: <b id="m-total"></b>. A confirmation would be sent to <span id="m-mail"></span>.</p><p style="color:var(--muted);font-size:.9rem">This is a demo: no data leaves your browser.</p><button class="btn btn-gold">Done</button></div></div></main>
+<footer><div class="wrap"><span>Jaipur Tourism guide. A demo website; illustrations are stand-ins for photographs.</span><span><a href="index.html">Home</a> &middot; <a href="heritage.html">Heritage</a> &middot; <a href="booking.html">Hotel Booking</a> &middot; <a href="gallery.html">Gallery</a></span></div></footer>
+<script src="js/main.js"></script></body></html>
